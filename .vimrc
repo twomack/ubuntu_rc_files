@@ -10,8 +10,9 @@ syntax on
 "turn on line numbers
 set number
 
-"option for copying an pasting with mouse
+"option for copying and pasting with mouse
 set mouse=a
+set ttymouse=xterm2
 
 "tab options
 set tabstop=2 softtabstop=2 shiftwidth=2

@@ -1,0 +1,12 @@
+# turn off annoying bell
+set bell-style none
+
+# export less env var to turn off bell in man pages
+export LESS="$LESS -Q"
+
+# add better history search to arrow bindings
+# to figure out key bindings, run cat then ctrl-v then sequence of keys
+if [[ $- == *i* ]]; then
+    bind '"\e[1;2A": history-search-backward'
+    bind '"\e[1;2B": history-search-forward'
+fi
